@@ -6,7 +6,7 @@ import { TodoProvider } from '../context/TodoContext';
 export default function Container() {
   return (
     <TodoProvider>
-      <div className='absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]'>
+      <div className='absolute top-16 left-[1.7rem] md:top-[25%] md:left-[40%]'>
         <Header />
         <Todo />
         <Footer />

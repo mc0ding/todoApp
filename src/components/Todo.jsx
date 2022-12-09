@@ -8,7 +8,7 @@ export default function Todo() {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <div className={darkMode ? 'w-80 h-56 bg-[#2C2D45] text-white p-5' : 'w-80 h-56 bg-white p-5'}>
+    <div className={darkMode ? 'w-80 h-56 bg-[#2C2D45] text-white p-5 overflow-y-auto' : 'w-80 h-56 bg-white p-5 overflow-y-auto '}>
       {state === 'All' && todo.length === 0 && 
       <div className={darkMode ? 'text-center translate-y-14 text-white font-bold' : 'text-center translate-y-14 font-bold'}>Todo List를 작성해보세요.</div>}
       {state === 'All' && todo.map((todo) => (

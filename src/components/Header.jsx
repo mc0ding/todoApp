@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { ImSun } from 'react-icons/im';
 import { BsMoonFill } from 'react-icons/bs';
 import { DarkModeContext, TodoActionsContext, TodoStateContext } from '../context/TodoContext';
